@@ -1,0 +1,43 @@
+pm.test("Status code is 200", function () {
+    pm.response.to.have.status(200);
+});
+
+//Спарсить response body в json.
+let resp = pm.response.json();
+
+// Проверить, что name в ответе равно name s request (name вбить руками.)
+pm.test("resp name", function () {
+    pm.expect(resp.name).to.eql("Bin");
+});
+//Проверить, что age в ответе равно age s request (age вбить руками.)
+pm.test("resp age", function () {
+    pm.expect(resp.age).to.eql("30");
+});
+// Проверить, что salary в ответе равно salary s request (salary вбить руками.)
+pm.test("resp salary", function () {
+    pm.expect(resp.salary).to.eql(1000);
+});
+// Спарсить request.
+let req_st = request.data;
+
+//8. Проверить, что name в ответе равно name s request (name забрать из request.)
+pm.test("Req name", function () {
+    pm.expect(resp.name).to.eql(req_st.name);
+});
+//Проверить, что age в ответе равно age s request (age забрать из request.)
+pm.test("Req age", function () {
+       pm.expect(resp.age).to.eql(req_st.age);
+});
+//10. Проверить, что salary в ответе равно salary s request (salary забрать из request.)
+var req_salary = + req_st.salary;
+pm.test("Req salary", function () {
+      pm.expect(resp.salary).to.eql(req_salary);
+});
+
+// 11.Вывести в консоль параметр family из response.
+console.log ("resp family = " + resp.family.children);
+
+//12.Проверить что u_salary_1_5_year в ответе равно salary*4 (salary забрать из request)
+pm.test("Resp salary", function () {
+      pm.expect(resp.family.u_salary_1_5_year).to.eql(req_salary*4);
+});

@@ -1,0 +1,40 @@
+Написать и выполнить следующие запросы:	
+	
+1. Вывести имя продукта и идентификатор категории для продукта Chang	
+"SELECT ProductName ,ProductID FROM Products WHERE ProductName=""Chang""
+
+2. Сделать выборку всех идентификаторов заказов и идентификаторов кастомеров, 
+которые сделали заказ после 2 февраля 1997 года включительно	
+"SELECT orderId, customerId FROM orders WHERE oderDate>='1997-02-02'
+
+3. Вывести самую минимальную цену продукта	
+"SELECT MIN(Price) FROM Products
+
+4. Вывести имя продукта с ценой меньше 22	
+"SELECT ProductName From Products WHERE Price<22
+
+
+5. Посчитать кол-во кастомеров, которые проживают в Лондоне	
+"SELECT COUNT(customerName) From customers WHERE city='London';
+
+6. Вывести всех кастомеров кроме тех, что проживают в Германии и Испании	
+"SELECT * FROM customers  WHERE Country NOT IN ('Germany', 'Spain');
+
+7. Отсортировать все заказы в таблице по убыванию даты	
+"SELECT * FROM orders Order by orderDate DESC
+
+	
+8.  Вывести все идентификаторы заказов и имена кастомеров, которые сделали заказ после 2 февраля 1997 года включительно
+"SELECT customerName, orderId FROM customers JOIN orders ON customers.customerId=orders.customerId WHERE orderDate>='1997-02-02'
+
+9. Вывести название продукта и цену с самым минимальным значением
+"SELECT productName,Price  From Products WHERE Price=(SELECT MIN(Price)From Products)
+
+10. Посчитать кол-во кастомеров в каждом городе и вывести результат используя группировку
+"	"SELECT COUNT(customerId ), city  FROM customers GROUP BY city ;
+
+тут с группировкой по убыванию числа покупателей	
+"SELECT COUNT(customerId ), city  FROM customers GROUP BY city ORDER BY COUNT(customerId) DESC;
+
+11. Вывести все неповторяющиеся записи таблицы Customers	
+SELECT DISTINCT *FROM customers
