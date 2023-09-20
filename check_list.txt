@@ -1,4 +1,198 @@
-Verify
-STR
-Result
-
+1. Installation	
+1	Installation on all supported environments and all supported platforms
+2	Installation of the application on unsupported environments and platforms
+3	Installation of the application with insufficient free space on the mobile device, accompanied by an appropriate warning
+4	Presence of the created application icon after installation
+5	Checking the size of the application after installation
+2. Update	
+6	Updating an application from the App Store
+7	Updating an application while it's launched in the background
+8	Saving the progress after updating
+9	Saving application configuration after update
+3. Deletion	
+10	Removing an app from Home Screen
+11	Removing an app through the phone settings
+12	Removing an app through App Library
+13	Removing an app  using the search function on the Home Screeen
+4. Lunch	
+14	Launching the application through the App Store
+15	Launching the application through the Home screen
+16	Launching the application through the App Library
+17	Launching the application through the "Search" function on the Home Screen
+18	Launching the application through the "Search" function through the App Library
+19	Launching an app with Siri
+20	Launching the application after reinstallation
+21	Launching an application in portrait orientation
+22	Launching the application in landscape orientation
+23	Launching the application in portrait orientation and changing to landscape orientation after loading
+24	Launching the application in landscape orientation and changing to portrait orientation after loading
+5. Minimizing	
+25	Minimizing the application to the background mode
+6. App exit	
+26	The Application Exit
+7. Interruptions	
+27	Incoming phone call (push notification)
+	
+	
+28	Incoming phone call (full-screen notification) 
+	
+	
+29	Incoming Face Time call ( push notification for iOS)
+	
+	
+30	Incoming Face Time call  ( full-screen notification for iOS)
+	
+	
+31	Incoming audio/video call from third-party app  (WhatsApp, Telegram)
+	
+	
+32	Getting an SMS message
+	
+	
+33	Incoming iMessage  (for iOS)
+	Push notifications from third-party apps
+	
+	
+	Connecting the charger
+	Disconnecting the charger
+	Connecting the wireless charger
+	Disconnecting the wireless  charger
+	Connecting the external bluetooth device ( headphones, mouse, keyboard )
+	Connecting the external Lightning device ( headphones, mouse, keyboard )
+	Disconnecting the external bluetooth device ( headphones, mouse, keyboard )
+	Disconnecting the external Lightning device ( headphones, mouse, keyboard )
+	The appearance of the AirPods animation ( для iOS )
+	Connecting the phone from the computer
+	Disconnecting the phone from the computer
+	Pull down/pull up the notification shade(the control center ) while using the up
+	Turn on screen recording using the buld-in function on an iOS device
+	Turn off screen recording using the buld-in function on an iOS device
+	Take a screenshot of screen using the buld-in function on an iOS device
+	Receiving nitifications from AirDrop
+	
+	Turn off AirDrop
+	Switching to another app
+	The battery is completely drained and the phone is turning off
+	Interruption by system nitifications ( such as low battery alerts). Battery level at 20%
+	Interruption by system nitifications ( such as low battery alerts). Battery level at 10%
+	Testing the app's performance in the phone's power-saving mode 
+	Lock the phone while using the app and immidiately unlock it
+	Lock the phone while using the app, wait for 10 minutes and then unlock it
+	Switch the app to the background and quckly switch back to it
+	Turning off the phone 
+	Leave the app inactive for 10 minutes
+8. Network	
+	"
+The application works when there is no Internet connection"
+	"
+The application works with unstable connection"
+	"
+The application works with exceptionally slow internet speed"
+	"
+The application works with a WiFi connection"
+	The application works with a 2G/EDGE mobile network connection
+	The application works with 3G/HSPA mobile network connection
+	The application works with 4G/LTE mobile network connection
+	The application works with a connection to the 5G mobile network
+	Resuming the connection after interrupting the connection to the Wi-Fi network
+	Resuming the connection after disconnecting the connection to the 2G/EDGE mobile network
+	Resuming connection after interruption of 3G/HSPA mobile network connection
+	Resuming the connection after disconnecting the connection to the 4G/LTE mobile network
+	Resuming the connection after disconnecting the connection to the 5G mobile network
+	The application works in "Airplane mode" without connecting to a Wi-Fi network
+	The application works when the "Airplane Mode" is turned off on the device
+	The application works in "Airplane mode" with a Wi-Fi connection
+	Switching a connection from a 2G/EDGE mobile network to Wi-Fi
+	Switching a 3G/HSPA mobile network connection to Wi-Fi
+	Switching a connection from a 4G/LTE mobile network to Wi-Fi
+	Switching a connection from a 5G mobile network to Wi-Fi
+	Switching a connection from a WiFi network to a 2G/EDGE mobile network
+	Switching a connection from a WiFi network to a 3G/HSPA mobile network
+	Switching a connection from a WiFi network to a 4G/LTE mobile network
+	Switching a connection from a WiFi network to a 5G mobile network
+	Switching between 2G/EDGE mobile networks to 3G/HSPA
+	Switching between 3G/HSPA mobile networks to 4G/LTE
+	Switching between 4G/LTE mobile networks on 5G
+	Switching from one Wi-Fi network to another WiFi network
+	The application works when the VPN is turned on
+	The application works when the VPN is turned off
+	The application works when hotspot is turned on
+	The application works when hotspot is turned off
+9. Localization	
+	Verify that the language of the application and the system of the mobile device match upon initial launch.
+	Verify that the language of the application and the system of the mobile device match on future launches.
+	The advertising banner is displayed in the language according to the selected locale
+	Checking text alignment
+	Checking for translation when changing language
+	Checking for translation accuracy
+	Grammar and punctuation check
+	Displaying formatted text (bold, italics, alignment, etc.)
+	Checking for font display
+	Checking for the display of special characters
+	Adaptation of audio, video, images, documentation in accordance with the selected locale
+	Checking for compliance with the legal features of the selected locale
+	Checking the calendar format
+	Checking the date format
+	Checking the time format
+	Checking the format of monetary values
+	Verification of the system of measures
+	Checking the address format
+	Checking the phone number format
+	Checking the format of numbers
+	Checking numeric separators (dots, commas, slash)
+10. UI	
+	Verify that the interface elements display the same and adapt to different screen sizes
+	Display the pages according to the design
+	Check for logo
+	Logo displayed according to the set design
+	Check the correct text font display
+	Check the correct display of buttons in the application
+	Check the correct display of blocks in the application
+	Check the color scheme of all items
+	Check the correct placement of banners
+	Check the response of active elements to guidance (animation, highlighting)
+11. UX	
+	The main function of the application is clear at first glance
+	All clickable elements are easy to understand, convenient and visible in the application
+	Clickable elements with non-obvious functionality have corresponding tooltips
+	The user can quickly return to the previous screen
+	The application can be closed from any screen or state
+	The application resumes operation in the same state in which it was closed
+	Presence of a user guide
+	Navigation testing
+12. Stress testing	
+	Lunching an application when the memory is low
+	Updating the application when memory level is not enought
+	Take actions in the application when there is no enough memory
+	Lunching an application when battery level is low
+	Take actions in the application while battery level is low
+	Take actions in the application when the CPU usage is high
+	Perform continuous actions in the application for several hours
+	Testing the working capacity of the application with a large number of users
+13. Integration testing	
+	Testing of push-up notifications sending function
+	"
+Social networks interaction testing"
+	Checking the display up-to-date information of app about the stock market and Forex
+	Checking the saving of user transactions in the trading history section of the app
+	Checking the interacts of app with the support service
+	Checking the compatibility of app with different versions of iOS
+	Checking the redirection of links in Setting Section to the third-party website
+	Permission to send notificatoins
+	
+	Getting reminders (Allow)
+	Getting reminders (Not Allow)
+	Testing Siri access permission to the app
+	Testing the Siri access ban to the app
+14. Security	
+	System resource access restriction
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
